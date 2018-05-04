@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+  /* [type="checkbox"]:checked {
+    position: absolute;
+    opacity: 1;
+    pointer-events: none;
+    left: 14%;
+    top: 45%;
+} */
+
+[type="checkbox"]:checked {
+  position: absolute;
+  opacity: 1;
+  pointer-events: none;
+}
+
+
+.story-text{
+  height: 120px;
+
+}
+
+.dash-status {
+  text-transform: capitalize;
+}
+
+#delete-form{
+  display: inline;
+}

@@ -1,5 +1,6 @@
-module.exports = {
-    mongoURI: 'mongodb://mihir:mihir@ds053160.mlab.com:53160/storyboards-app',
-    googleClientID: '765673341810-0gi50cnj31qv82b7666nn0gmmbcv4oga.apps.googleusercontent.com',
-    googleClientSecret: 'ijhoR0fGXxRUsx3Psfa24F_6'
-}
+if(process.env.NODE_ENV === 'production'){
+    module.exports = require('./keys_prod');
+} else {
+    module.exports = require('./keys_dev');
+
+} 
